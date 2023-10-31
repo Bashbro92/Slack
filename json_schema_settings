@@ -1,0 +1,62 @@
+{
+
+    "$schema": "http://json-schema.org/schema#",
+    "title": "Slack Disable Auto-Updates",
+    "description": "This schema will enable the option to disable auto updates for Slack.app",
+    "properties": {
+
+        "SlackNoAutoUpdates": {
+
+            "type": "boolean",
+            "title": "Disable Auto-Updates for Slack.app",
+            "property_order": 5       
+        }
+    }
+}
+Mcleveland
+ Mcleveland
+New Contributor II
+In response to sam_clark
+2 seconds ago
+
+{
+  "$schema": "http://json-schema.org/schema#",
+  "title": "Slack Supported settings",
+  "description": "This schema will enable the option to disable auto updates for Slack.app",
+  "properties": {
+    "AutoUpdate": {
+      "type": "boolean",
+      "title": "AutoUpdate",
+      "description": "Enables or disables automatic updates of the desktop app",
+      "default": false
+    },
+    "ClientEnvironment": {
+      "type": "integer",
+      "title": "ClientEnvironment",
+      "description": "Configures the client to run in either commercial mode or government compliance mode (GovSlack).",
+      "enum": [
+        1000,
+        1001
+      ],
+      "default": 1000
+    },
+    "DefaultSignInTeam": {
+      "type": "string",
+      "title": "DefaultSignInTeam",
+      "description": "Sets a default workspace URL for users to sign into on first launch. A valid workspace ID should be typed in.",
+      "default": "your-workspace-id"
+    },
+    "DownloadPath": {
+      "type": "string",
+      "title": "DownloadPath",
+      "description": "Configures a download location.",
+      "default": "/tmp/downloads"
+    },
+    "HardwareAcceleration": {
+      "type": "boolean",
+      "title": "HardwareAcceleration",
+      "description": "Enables or disables hardware accelerated rendering on the client.",
+      "default": true
+    }
+  }
+}
