@@ -1,25 +1,4 @@
 {
-
-    "$schema": "http://json-schema.org/schema#",
-    "title": "Slack Disable Auto-Updates",
-    "description": "This schema will enable the option to disable auto updates for Slack.app",
-    "properties": {
-
-        "SlackNoAutoUpdates": {
-
-            "type": "boolean",
-            "title": "Disable Auto-Updates for Slack.app",
-            "property_order": 5       
-        }
-    }
-}
-Mcleveland
- Mcleveland
-New Contributor II
-In response to sam_clark
-2 seconds ago
-
-{
   "$schema": "http://json-schema.org/schema#",
   "title": "Slack Supported settings",
   "description": "This schema will enable the option to disable auto updates for Slack.app",
